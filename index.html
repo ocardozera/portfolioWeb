@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>
+        Meu portf&oacute;lio
+    </title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #fbfbfd;
+            padding: 20px;
+            font-family: 'Roboto Slab';
+        }
+
+        .main{
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1{
+            font-size: 50px;
+            word-break: break-word;
+        }
+
+        .row{
+            margin: 8px -16px;
+        }
+
+        .row, .row>.column{
+            padding: 4px;
+        }
+
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column{
+            float: left;
+            width: 25%;
+        }
+
+        @media screen and (max-width: 900px) {
+            .column{
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .column{
+                width: 100%;
+            }
+        }
+        
+        .content{
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        .image{
+            border-radius: 12px;
+            opacity:0.5;
+        }
+        .image:hover{
+            opacity:1;
+            -webkit-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+            transform: scale(1.3);
+        }
+        .mainImage{
+            border-radius: 12px;
+            opacity:0.5;
+        }
+        .mainImage:hover{
+            opacity:1;
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+    </style>
+
+<body>
+    <div class="main">
+        <div style="text-align: center;">
+            <h1>MATHEUS JOSÉ CARDOSO</h1>
+            <p>Aluno de Engenharia de Software</p>
+            <p>
+                <a href='https://instagram.com/ocardozera/'>Instagram: @ocardozera</a>
+                 / 
+                <a href='https://github.com/ocardozera/'>Github: ocardozera</a></p>
+        </div>
+        <hr style="width: 65%;"/>
+
+        <h2 style="font-size: 38px;">Meu portfólio</h2>
+
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <img class="image" src="./logos/logoFatos.png" alt="Imagem 1" style="width: 100%;">
+                    <h3>Site Fatos Desconhecidos</h3>
+                    <p>Desenvolvimento full stack para o site Fatos Dex, foi utilizado PHP e a plataforma Wordpress.</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <img class="image" src="./logos/Logo_VIX.png" alt="Imagem 1" style="width: 100%;">
+                    <h3>Site VIX</h3>
+                    <p>Criação de landing page para o site VIX, foi utilizado HTML5, CSS3 e JS.</p>
+                </div>
+            </div>
+                
+            <div class="column">
+                <div class="content">
+                    <img class="image" src="./logos/nova-marca-uol-em-fundo-branco-quadrada-1619558104583_v2_450x337.jpg" alt="Imagem 1" style="width: 100%;">
+                    <h3>Aplicativo ControleFinanceiro</h3>
+                    <p>Criação de site editorial para UOL, utilizando Java.</p> 
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <img class="image" src="./logos/logoG1.png" alt="Imagem 1" style="width: 100%;">
+                    <h3>Site Landing Brasil</h3>
+                    <p>Criação de notícias para G1.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <img class="mainImage" src="./logos/cnn-logo-white-on-red.jpg" style="width: 100%;"/>
+            <h3>Site CNN Brasil</h3>
+            <p>Criação de site para CNN Brasil.</p>
+
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</head>
+
+</html>
